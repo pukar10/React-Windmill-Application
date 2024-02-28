@@ -1,0 +1,20 @@
+Format:
+
+Bug   |  Solution   
+Ex) Bug with application error handler in error-handler.js | removed code pointing to incorrect file
+
+1. Cannot find Module 'axios' in 'PhotoContext.js' | install axios
+
+2. <h2>{searchTerm + 'ERROR?'} Pictures</h2> wrong formatting | <h2>{searchTerm} Pictures</h2>
+
+3. In PhotoContext.js axios call setLoading(True) | setLoading(False)
+
+4. Form Magnifying button not visible, was set to disabled=true | disabled={!searchEntry.trim()} -> only be able to search if text
+in search box. changed fill color from #ffffff to #000000 for visibility (magnifying glass color)
+
+5. Cannot type in search bar because value={searchEntry} | comment out value={searchEntry}
+
+6. Cannot search words in search bar | Form will be a Consumer component of Provider PhotoContext component. Provider
+Component should be able to share data with consumer components via props (idea is to send what ever is in the searchbar
+to PhotoContext as a query and display those images).
+
