@@ -1,5 +1,11 @@
-Format:
+Built With
+React js
+React Router
+React Hooks
+Context API
+Flickr API
 
+Format:
 Bug   |  Solution   
 Ex) Bug with application error handler in error-handler.js | removed code pointing to incorrect file
 
